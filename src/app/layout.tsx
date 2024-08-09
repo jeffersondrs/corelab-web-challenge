@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
-const poppins = Poppins({
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin-ext"],
-});
+const inter = Inter({ weight: ['400'], style: 'normal', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Core Notes",
-  description: "Desafio Corelabs - Core Notes",
+  title: 'Core Notes',
+  description: 'Desafio Corelabs - Core Notes',
 };
 
 export default function RootLayout({
@@ -20,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={`
+          max-w-[91rem] mx-auto
+          ${inter.className}
+        `}
+      >
+        {children}
+      </body>
     </html>
   );
 }
