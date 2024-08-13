@@ -18,7 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          max-w-[91rem] mx-auto
+          max-w-[120rem] mx-auto
+          bg-[#F0F2F5]
           ${inter.className}
         `}
       >

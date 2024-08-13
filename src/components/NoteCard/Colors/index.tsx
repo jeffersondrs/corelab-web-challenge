@@ -1,9 +1,5 @@
-import React from "react";
-
-type ColorProps = {
-  color: string;
-  onClick: () => void;
-};
+import React from 'react';
+import { ColorProps } from '@/types/global';
 
 export default function Color({ color, onClick }: ColorProps) {
   return (
