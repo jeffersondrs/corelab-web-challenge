@@ -60,7 +60,7 @@ export default function Home() {
                   Favoritas
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row px-10 md:w-full md:px-20 md:grid md:grid-cols-3 gap-10">
+              <div className="flex flex-col md:flex-row px-10 md:w-full md:px-20 md:grid md:grid-cols-3 gap-8">
                 {noteStore.notes
                   .filter((note) => note.isFavorite)
                   .map((note) => (
